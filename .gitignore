@@ -1,4 +1,5 @@
 /.idea/
 /target/
 
-.idea/$PROJECT_FILE$
+/doc/
+/scr/main/docs/
