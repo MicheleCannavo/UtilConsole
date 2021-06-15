@@ -1,0 +1,14 @@
+digraph "org.example.util.validator.ValidateGeneric.ValidateGeneric"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="org.example.util.validator.\lValidateGeneric.ValidateGeneric",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Costruttore per la validazione di un oggetto generico."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="org.example.util.validator.\lAbstractValidator.setNameValidator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d6e/a00073_a4e5c51528d1ceff3e97a2c833c66bd2e.html#a4e5c51528d1ceff3e97a2c833c66bd2e",tooltip="Sets name validator."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="org.example.util.validator.\lAbstractValidator.setPattern",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d6e/a00073_ad9a4477ef4cec79579960fb1683ff1a6.html#ad9a4477ef4cec79579960fb1683ff1a6",tooltip="Sets pattern."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="org.example.util.validator.\lAbstractValidator.setValidationRules",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d6e/a00073_a5cbc4c3ade49bfeff8b56acb5a872fbc.html#a5cbc4c3ade49bfeff8b56acb5a872fbc",tooltip="Sets validation rules."];
+}

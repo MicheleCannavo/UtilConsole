@@ -1,0 +1,10 @@
+<map id="org.example.util.validator.AbstractValidator.request" name="org.example.util.validator.AbstractValidator.request">
+<area shape="rect" id="node1" title="Richiesta tramite input da tastiera." alt="" coords="5,165,175,207"/>
+<area shape="rect" id="node2" href="$db/df8/a00076_a965d757cfc90c0e7f9fca3165d025490.html#a965d757cfc90c0e7f9fca3165d025490" title="Gets descriptor rules validation." alt="" coords="223,5,469,47"/>
+<area shape="rect" id="node3" href="$db/df8/a00076_acd92ade8ed1cc7bac0bf3c4add03b77f.html#acd92ade8ed1cc7bac0bf3c4add03b77f" title="Restituisce una stringa con l&#39; elemento della validazione della classe." alt="" coords="231,71,461,112"/>
+<area shape="rect" id="node4" href="$db/df8/a00076_a7753dd545c2ee8c31510c8c10728286a.html#a7753dd545c2ee8c31510c8c10728286a" title="Prende in Input una stringa e controlla se corrisponde alla sintassi della Regex di validazione." alt="" coords="261,136,431,177"/>
+<area shape="rect" id="node5" href="$d6/d2c/a00072_a94c3d547ab0e1b7f8a17b756389aa450.html#a94c3d547ab0e1b7f8a17b756389aa450" title="Stampa una stringa con lineSeparator() finale." alt="" coords="517,224,684,265"/>
+<area shape="rect" id="node7" href="$d6/d2c/a00072_aec5dd97874207af8ecf9680b111134e1.html#aec5dd97874207af8ecf9680b111134e1" title="Stampa la stringa &quot;input non valido&quot;." alt="" coords="263,253,429,295"/>
+<area shape="rect" id="node8" href="$da/d24/a00068_a6b5dd9abfb2087bce26c178eb68105b5.html#a6b5dd9abfb2087bce26c178eb68105b5" title="Previa stampa di un messaggio, preleva dalla console o dal System.in, se non dovesse esserci una cons..." alt="" coords="263,319,429,360"/>
+<area shape="rect" id="node6" href="$d6/d2c/a00072_adf62270ce5d7e0dc37915832a4c63300.html#adf62270ce5d7e0dc37915832a4c63300" title="Stampa una stringa senza lineSeparator() finale." alt="" coords="732,224,899,265"/>
+</map>

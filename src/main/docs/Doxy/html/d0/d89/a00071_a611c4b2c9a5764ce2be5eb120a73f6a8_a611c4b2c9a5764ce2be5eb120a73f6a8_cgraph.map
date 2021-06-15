@@ -1,0 +1,4 @@
+<map id="org.example.util.console.Input.readPassword" name="org.example.util.console.Input.readPassword">
+<area shape="rect" id="node1" title="Legge da console una password, senza mostrarne i caratteri a video." alt="" coords="5,5,172,47"/>
+<area shape="rect" id="node2" href="$d0/d89/a00071_a6b5dd9abfb2087bce26c178eb68105b5.html#a6b5dd9abfb2087bce26c178eb68105b5" title="Legge un input, da System.in, come stringa." alt="" coords="220,5,387,47"/>
+</map>

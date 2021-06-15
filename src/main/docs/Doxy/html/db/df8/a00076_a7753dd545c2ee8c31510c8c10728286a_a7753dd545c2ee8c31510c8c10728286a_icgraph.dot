@@ -1,0 +1,10 @@
+digraph "org.example.util.validator.AbstractValidator.isValid"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="org.example.util.validator.\lAbstractValidator.isValid",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Prende in Input una stringa e controlla se corrisponde alla sintassi della Regex di validazione."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="org.example.util.validator.\lAbstractValidator.request",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/df8/a00076_a65bd335250cee3a9dc558f7d5dbca1bc.html#a65bd335250cee3a9dc558f7d5dbca1bc",tooltip="Richiesta tramite input da tastiera."];
+}

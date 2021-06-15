@@ -1,30 +1,33 @@
-# Util
+# Stato del progetto
 
 ## Console
 
-|   Package   | Class       | Method          | Version  | Completion | TEST  |  % TEST  |
-| :---------: | :---------- | :-------------- | :------: | :--------: | :---: | :------: |
-| **console** |             |                 |          |            |       |          |
-|             | **Console** |                 |          |            |       |  **-**   |
-|             |             | _clrscr_        |  1.0.0   |   **OK**   | **-** |          |
-|             | **Input**   |                 |          |            |       | **100%** |
-|             |             | _readLine_      |  1.0.0   |   **OK**   |       |          |
-|             |             | _readPassword_  |  1.0.0   |   **OK**   |       |          |
-|             | **Output**  |                 |          |            |       | **100%** |
-|             |             | _printLine_     |  1.0.0   |   **OK**   |       |          |
-|             |             | _printlnLine_   |  1.0.0   |   **OK**   |       |          |
-|             |             | _printNotValid_ |  1.1.0   |   **OK**   |       |          |
+|   Package   | Class       | Method           | Version | Completion |
+| :---------: | :---------- | :--------------- | :-----: | :--------: |
+|             |             |                  |         |            |
+| **console** |             |                  |         |            |
+|             | **Console** |                  |         |            |
+|             |             | _clrscr_         |  1.0.0  |   **OK**   |
+|             | **Input**   |                  |         |            |
+|             |             | _readLine_       |  1.0.0  |   **OK**   |
+|             |             | _readPassword_   |  1.0.0  |   **OK**   |
+|             | **Output**  |                  |         |            |
+|             |             | _printLine_      |  1.0.0  |   **OK**   |
+|             |             | _printlnLine_    |  1.0.0  |   **OK**   |
+|             |             | _printNotValid_  |  1.1.0  |   **OK**   |
+|             |             | _printIsPresent_ |  1.3.0  |   **OK**   |
 
 ## Validators
 
-| Class                     | Method | Versione | Completamento |   TEST   |  % TEST  |
-| :------------------------ | :----- | :------: | :-----------: | :------: | :------: |
-|                           |        |          |               |          |          |
-| **_Validator_**           | 1.0.0  |  **0%**  |     **-**     |          | **100%** |
-| **_ValidateName_**        | 1.0.0  |  **0%**  |               | **100%** | **100%** |
-| **_ValidateNameProject_** | 1.0.0  |  **0%**  |               | **100%** | **100%** |
-| **_ValidateEmail_**       | 1.0.0  |  **0%**  |               | **100%** | **100%** |
-| **_ValidateNumber_**      | 1.0.0  |  **0%**  |               | **100%** | **100%** |
-| **_ValidatePassword_**    | 1.0.0  |  **0%**  |               | **100%** | **100%** |
-| **_ValidateVersion_**     | 1.2.0  |  **0%**  |               | **100%** | **100%** |
-| **_ValidateGeneric_**     | 1.1.0  |  **0%**  |               | **100%** | **100%** |
+ | Class                   | Method | Versione | Completion |
+ | :---------------------- | :----- | :------: | :--------: |
+ |                         |        |          |            |
+ |                         |        |          |            |
+ | **Validator**           | 1.0.0  |  **0%**  |   **-**    |
+ | **ValidateName**        | 1.0.0  |  **0%**  |            |
+ | **ValidateNameProject** | 1.0.0  |  **0%**  |            |
+ | **ValidateEmail**       | 1.0.0  |  **0%**  |            |
+ | **ValidateNumber**      | 1.0.0  |  **0%**  |            |
+ | **ValidatePassword**    | 1.0.0  |  **0%**  |            |
+ | **ValidateVersion**     | 1.2.0  |  **0%**  |            |
+ | **ValidateGeneric**     | 1.1.0  |  **0%**  |            |

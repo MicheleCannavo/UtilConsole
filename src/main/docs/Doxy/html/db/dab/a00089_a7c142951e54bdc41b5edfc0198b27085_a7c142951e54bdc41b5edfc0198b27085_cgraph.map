@@ -1,0 +1,7 @@
+<map id="org.example.util.validator.ValidateNameProject.getInstance" name="org.example.util.validator.ValidateNameProject.getInstance">
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,220,112"/>
+<area shape="rect" id="node2" href="$db/dab/a00089_a1850c3163d863987288bf1edcc6389b5.html#a1850c3163d863987288bf1edcc6389b5" title="Instantiates a new Validate name project." alt="" coords="268,63,497,119"/>
+<area shape="rect" id="node3" href="$d1/d6e/a00073_a4e5c51528d1ceff3e97a2c833c66bd2e.html#a4e5c51528d1ceff3e97a2c833c66bd2e" title="Sets name validator." alt="" coords="548,5,777,47"/>
+<area shape="rect" id="node4" href="$d1/d6e/a00073_ad9a4477ef4cec79579960fb1683ff1a6.html#ad9a4477ef4cec79579960fb1683ff1a6" title="Sets pattern." alt="" coords="569,71,756,112"/>
+<area shape="rect" id="node5" href="$d1/d6e/a00073_a5cbc4c3ade49bfeff8b56acb5a872fbc.html#a5cbc4c3ade49bfeff8b56acb5a872fbc" title="Sets validation rules." alt="" coords="545,136,780,177"/>
+</map>

@@ -1,0 +1,10 @@
+digraph "org.example.util.console.Input.readPassword"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="org.example.util.console.\lInput.readPassword",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Previa stampa del messaggio : \"password: \" Permette l' immissione da console di una password come avv..."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="org.example.util.console.\lInput.readLine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d24/a00068_a6b5dd9abfb2087bce26c178eb68105b5.html#a6b5dd9abfb2087bce26c178eb68105b5",tooltip="Previa stampa di un messaggio, preleva dalla console o dal System.in, se non dovesse esserci una cons..."];
+}

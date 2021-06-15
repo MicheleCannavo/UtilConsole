@@ -1,0 +1,7 @@
+<map id="org.example.util.validator.ValidateEmail.getInstance" name="org.example.util.validator.ValidateEmail.getInstance">
+<area shape="rect" id="node1" title="Get instance validate email." alt="" coords="5,71,179,112"/>
+<area shape="rect" id="node2" href="$d1/d09/a00077_ae8dba6bfba3679ad3c67065ac184c9d9.html#ae8dba6bfba3679ad3c67065ac184c9d9" title="Instantiates a new Validate email." alt="" coords="227,71,413,112"/>
+<area shape="rect" id="node3" href="$d1/d6e/a00073_a4e5c51528d1ceff3e97a2c833c66bd2e.html#a4e5c51528d1ceff3e97a2c833c66bd2e" title="Sets name validator." alt="" coords="464,5,693,47"/>
+<area shape="rect" id="node4" href="$d1/d6e/a00073_ad9a4477ef4cec79579960fb1683ff1a6.html#ad9a4477ef4cec79579960fb1683ff1a6" title="Sets pattern." alt="" coords="485,71,672,112"/>
+<area shape="rect" id="node5" href="$d1/d6e/a00073_a5cbc4c3ade49bfeff8b56acb5a872fbc.html#a5cbc4c3ade49bfeff8b56acb5a872fbc" title="Sets validation rules." alt="" coords="461,136,696,177"/>
+</map>

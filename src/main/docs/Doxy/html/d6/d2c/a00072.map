@@ -1,0 +1,10 @@
+<map id="org.example.util.validator.AbstractValidator" name="org.example.util.validator.AbstractValidator">
+<area shape="rect" id="node1" title="Questa interfaccia permette la validazione di una Stringa con l&#39; elemento oggetto della classe." alt="" coords="581,5,783,303"/>
+<area shape="rect" id="node2" href="$d1/d09/a00077.html" title="Demonstration for PlantUML." alt="" coords="5,351,175,487"/>
+<area shape="rect" id="node3" href="$d8/d53/a00081.html" title="Questa classe permette di validare un oggetto." alt="" coords="199,358,368,479"/>
+<area shape="rect" id="node4" href="$df/d13/a00085.html" title="The type Validate name." alt="" coords="392,351,561,487"/>
+<area shape="rect" id="node5" href="$db/dab/a00089.html" title="The type Validate name project." alt="" coords="586,351,778,487"/>
+<area shape="rect" id="node6" href="$d4/d7d/a00093.html" title="The type Validate number." alt="" coords="803,351,972,487"/>
+<area shape="rect" id="node7" href="$d1/d84/a00097.html" title="The type Validate password." alt="" coords="996,351,1171,487"/>
+<area shape="rect" id="node8" href="$d4/d3a/a00101.html" title="The type Validate version." alt="" coords="1195,351,1364,487"/>
+</map>
