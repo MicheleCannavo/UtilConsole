@@ -13,16 +13,28 @@ import java.util.Collection;
 import static org.junit.Assert.assertEquals;
 import static org.junit.contrib.java.lang.system.TextFromStandardInputStream.emptyStandardInputStream;
 
+/**
+ * The type Test validate name project.
+ */
 public class TestValidateNameProject {
 
-  ValidateNameProject vn;
+    /**
+     * The Vn.
+     */
+    ValidateNameProject vn;
 
-  @Before
+    /**
+     * Pre condition.
+     */
+    @Before
   public void preCondition(){
     vn = ValidateNameProject.getInstance();
   }
 
-  @Test
+    /**
+     * Test get descriptor rules validation.
+     */
+    @Test
   public void testGetDescriptorRulesValidation() {
     String desc =
       "Il nome progetto deve contenere:"      + System.lineSeparator() +
@@ -35,33 +47,65 @@ public class TestValidateNameProject {
     assertEquals(desc, vn.getRulesOfValidation());
   }
 
-  @Test
+    /**
+     * Gets pattern.
+     */
+    @Test
   public void getPattern() {
     assertEquals("^[A-Z]{1,}[a-zA-Z0-9]{2,24}$",
       vn.getPattern());
   }
 
-  @Test
+    /**
+     * Gets validator name.
+     */
+    @Test
   public void getValidatorName() {
     assertEquals("nome progetto",
       vn.getValidatorName());
   }
 
-  @RunWith(Parameterized.class)
+    /**
+     * The type Test validate number with input.
+     */
+    @RunWith(Parameterized.class)
   public static class TestValidateNumberWithInput {
 
-    @Rule
+        /**
+         * The System in mock.
+         */
+        @Rule
     public final TextFromStandardInputStream systemInMock = emptyStandardInputStream();
-    private final String str;
-    private final boolean bool;
-    private ValidateNameProject vn= ValidateNameProject.getInstance();
+        /**
+         * The Str.
+         */
+        private final String str;
+        /**
+         * The Bool.
+         */
+        private final boolean bool;
+        /**
+         * The Vn.
+         */
+        private ValidateNameProject vn= ValidateNameProject.getInstance();
 
-    public TestValidateNumberWithInput(String str, boolean bool) {
+        /**
+         * Instantiates a new Test validate number with input.
+         *
+         * @param str  the str
+         * @param bool the bool
+         */
+        public TestValidateNumberWithInput(String str, boolean bool) {
       this.str = str;
       this.bool = bool;
     }
 
-    @Parameterized.Parameters
+        /**
+         * Gets param.
+         *
+         * @return the param
+         */
+        @Parameterized.Parameters
     public static Collection<Object[]> getParam() {
       return Arrays.asList(
         new Object[] {"AAA",      true},
@@ -73,16 +117,15 @@ public class TestValidateNameProject {
         new Object[] {"Asds34f",  true});
     }
 
-    @Test
+        /**
+         * Testis valid.
+         */
+        @Test
     public void testisValid() {
       System.out.println(str);
       assertEquals(vn.isValid(str), bool);
     }
 
-    @Test
-    public void TestRequest() {
-      systemInMock.provideLines(str);
-      assertEquals(bool ? str : null, vn.request());
-    }
+
   }
 }

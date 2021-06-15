@@ -13,16 +13,28 @@ import java.util.Collection;
 import static org.junit.Assert.assertEquals;
 import static org.junit.contrib.java.lang.system.TextFromStandardInputStream.emptyStandardInputStream;
 
+/**
+ * The type Test validate password.
+ */
 public class TestValidatePassword {
 
-  ValidatePassword vp;
+    /**
+     * The Vp.
+     */
+    ValidatePassword vp;
 
-  @Before
+    /**
+     * Pre condition.
+     */
+    @Before
   public void preCondition(){
     vp = ValidatePassword.getInstance();
   }
 
-  @Test
+    /**
+     * Test get descriptor rules validation.
+     */
+    @Test
   public void testGetDescriptorRulesValidation() {
     String desc =
       "La password deve contenere:" + System.lineSeparator() +
@@ -35,35 +47,67 @@ public class TestValidatePassword {
     assertEquals(desc, vp.getRulesOfValidation());
   }
 
-  @Test
+    /**
+     * Gets pattern.
+     */
+    @Test
   public void getPattern() {
     assertEquals("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{4,8}$",
       vp.getPattern());
   }
 
-  @Test
+    /**
+     * Gets validator name.
+     */
+    @Test
   public void getValidatorName() {
     assertEquals("password",
       vp.getValidatorName());
   }
 
 
-  @RunWith(Parameterized.class)
+    /**
+     * The type Testis valid.
+     */
+    @RunWith(Parameterized.class)
   public static class TestisValid {
 
 
-    @Rule
+        /**
+         * The System in mock.
+         */
+        @Rule
     public final TextFromStandardInputStream systemInMock = emptyStandardInputStream();
-    private final String str;
-    private final boolean bool;
-    private ValidatePassword vp = ValidatePassword.getInstance();
+        /**
+         * The Str.
+         */
+        private final String str;
+        /**
+         * The Bool.
+         */
+        private final boolean bool;
+        /**
+         * The Vp.
+         */
+        private ValidatePassword vp = ValidatePassword.getInstance();
 
-    public TestisValid(String str, boolean bool) {
+        /**
+         * Instantiates a new Testis valid.
+         *
+         * @param str  the str
+         * @param bool the bool
+         */
+        public TestisValid(String str, boolean bool) {
       this.str = str;
       this.bool = bool;
     }
 
-    @Parameterized.Parameters
+        /**
+         * Gets param.
+         *
+         * @return the param
+         */
+        @Parameterized.Parameters
     public static Collection<Object[]> getParam() {
       return Arrays.asList(
         new Object[] {"Aaa003",        true},
@@ -79,15 +123,14 @@ public class TestValidatePassword {
         new Object[] {"4assas854",     false});
     }
 
-    @Test
+        /**
+         * Test validate password.
+         */
+        @Test
     public void testValidatePassword() {
       System.out.println(str);
       assertEquals(vp.isValid(str), bool);
     }
-    @Test
-    public void TestRequest() {
-      systemInMock.provideLines(str);
-      assertEquals(bool ? str : null, vp.request());
-    }
+
   }
 }

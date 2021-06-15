@@ -14,15 +14,14 @@ public final class ValidatePassword extends AbstractValidator {
    * Classe con soli metodi statici
    */
   private ValidatePassword(){
-    nameValidator   = "password";
-    pattern         = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{4,8}$";
-    validationRules =
-      "La password deve contenere:" + System.lineSeparator() +
-      "- Una lettera MAIUSCOLA"     + System.lineSeparator() +
-      "- Una lettera minuscola"     + System.lineSeparator() +
-      "- Un numero"                 + System.lineSeparator() +
-      "- min 4 caratteri"           + System.lineSeparator() +
-      "- max 8 caratteri"           + System.lineSeparator();
+    setNameValidator("password");
+    setPattern("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{4,8}$");
+    setValidationRules("La password deve contenere:" + System.lineSeparator() +
+                    "- Una lettera MAIUSCOLA"     + System.lineSeparator()  +
+                    "- Una lettera minuscola"     + System.lineSeparator()  +
+                    "- Un numero"                 + System.lineSeparator()  +
+                    "- min 4 caratteri"           + System.lineSeparator()  +
+                    "- max 8 caratteri"           + System.lineSeparator());
   }
 
   /**

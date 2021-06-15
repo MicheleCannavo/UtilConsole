@@ -8,7 +8,7 @@ import static java.lang.System.lineSeparator;
  *
  * @since 1.2.0
  */
-public class ValidateVersion extends AbstractValidator {
+public final class ValidateVersion extends AbstractValidator {
 
     /**
      * The constant instance.
@@ -18,18 +18,14 @@ public class ValidateVersion extends AbstractValidator {
     /**
      * Instantiates a new Validate version.
      */
-    private ValidateVersion() {
-        nameValidator = "numero di versione";
-
-        pattern = "^([0-9]+)\\.([0-9]+)\\.([0-9]+)(?:-([0-9A-Za-z-]+(?:\\.[0-9A-Za-z-]+)*))?(?:\\+[0-9A-Za-z-]+)?$";
-
-        validationRules =
-            "Il formato deve essere X.Y.Z[[-pre_release][+build]] :" +
+    private ValidateVersion() {    setNameValidator("numero di versione");
+        setPattern("^([0-9]+)\\.([0-9]+)\\.([0-9]+)(?:-([0-9A-Za-z-]+(?:\\.[0-9A-Za-z-]+)*))?(?:\\+[0-9A-Za-z-]+)?$");
+        setValidationRules("Il formato deve essere X.Y.Z[[-pre_release][+build]] :" +
                 "- X -> MAJOR version"  + lineSeparator() +
                 "- Y -> MINOR version"  + lineSeparator() +
                 "- Z -> PATCH version"  + lineSeparator() +
                 "- - pre-release "      + lineSeparator() +
-                "- + build metadata"    + lineSeparator();
+                "- + build metadata"    + lineSeparator()) ;
     }
 
     /**

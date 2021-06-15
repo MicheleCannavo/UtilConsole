@@ -15,15 +15,17 @@ public final class ValidateNameProject extends AbstractValidator {
      * Instantiates a new Validate name project.
      */
     private ValidateNameProject() {
-    nameValidator = "nome progetto";
-    pattern = "^[A-Z]{1,}[a-zA-Z0-9]{2,24}$";
-    validationRules =
+
+
+    setNameValidator("nome progetto");
+    setPattern("^[A-Z]{1,}[a-zA-Z0-9]{2,24}$");
+    setValidationRules(
       "Il nome progetto deve contenere:"     + System.lineSeparator() +
       "- Iniziare con una lettera MAIUSCOLA" + System.lineSeparator() +
       "- Una lettera minuscola"              + System.lineSeparator() +
       "- Un numero"                          + System.lineSeparator() +
       "- min 3 caratteri"                    + System.lineSeparator() +
-      "- max 25 caratteri"                   + System.lineSeparator();
+      "- max 25 caratteri"                   + System.lineSeparator());
   }
 
     /**

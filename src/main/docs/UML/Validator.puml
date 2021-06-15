@@ -1,0 +1,50 @@
+@startuml
+package validator {
+class ValidateNumber {
+- {static} ValidateNumber instance
+- <<Create>> ValidateNumber()
++ {static} ValidateNumber getInstance()
+}
+class ValidatePassword {
+- {static} ValidatePassword instance
+- <<Create>> ValidatePassword()
++ {static} ValidatePassword getInstance()
+}
+class ValidateName {
+- {static} ValidateName instance
+- <<Create>> ValidateName()
++ {static} ValidateName getInstance()
+}
+class ValidateEmail {
+- {static} ValidateEmail instance
+- <<Create>> ValidateEmail()
++ {static} ValidateEmail getInstance()
+}
+class ValidateGeneric {
++ <<Create>> ValidateGeneric(String,String)
++ void setValidationRules(String)
+}
+class ValidateNameProject {
+- {static} ValidateNameProject instance
+- <<Create>> ValidateNameProject()
++ {static} ValidateNameProject getInstance()
+}
+abstract class AbstractValidator {
+# String pattern
+# String nameValidator
+# String validationRules
++ String getPattern()
++ String getValidatorName()
++ String getRulesOfValidation()
++ boolean isValid(String)
++ String request()
+}
+}
+
+AbstractValidator <|-- ValidateNumber
+AbstractValidator <|-- ValidatePassword
+AbstractValidator <|-- ValidateName
+AbstractValidator <|-- ValidateEmail
+AbstractValidator <|-- ValidateGeneric
+AbstractValidator <|-- ValidateNameProject
+@enduml

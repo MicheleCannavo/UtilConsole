@@ -14,9 +14,9 @@ public final class ValidateNumber extends AbstractValidator {
    * Classe con soli metodi statici
    */
   private ValidateNumber(){
-    nameValidator   = "number";
-    pattern         = "^[0-9]+$";
-    validationRules = "";
+    setNameValidator("number");
+    setPattern("^[0-9]+$");
+    setValidationRules("");
   }
 
   /**

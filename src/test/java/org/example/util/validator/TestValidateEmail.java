@@ -13,47 +13,91 @@ import java.util.Collection;
 import static org.junit.Assert.assertEquals;
 import static org.junit.contrib.java.lang.system.TextFromStandardInputStream.emptyStandardInputStream;
 
+/**
+ * The type Test validate email.
+ */
 public class TestValidateEmail {
-  ValidateEmail ve;
+    /**
+     * The Ve.
+     */
+    ValidateEmail ve;
 
-  @Before
+    /**
+     * Pre condition.
+     */
+    @Before
   public void preCondition(){
     ve = ValidateEmail.getInstance();
   }
 
-  @Test
+    /**
+     * Test get descriptor rules validation.
+     */
+    @Test
   public void testGetDescriptorRulesValidation() {
     assertEquals("Indirizzo Valido",
-      ve.validationRules);
+      ve.getValidationRules());
   }
 
-  @Test
+    /**
+     * Test get pattern.
+     */
+    @Test
   public void testGetPattern() {
     assertEquals("^[a-zA-Z0-9\\.-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-]{2,4}$",
       ve.getPattern());
   }
 
-  @Test
+    /**
+     * Test get validator name.
+     */
+    @Test
   public void testGetValidatorName() {
     assertEquals("e-mail",
       ve.getValidatorName());
   }
 
-  @RunWith(Parameterized.class)
+    /**
+     * The type Testis valid.
+     */
+    @RunWith(Parameterized.class)
   public static class TestisValid {
 
-    @Rule
+        /**
+         * The System in mock.
+         */
+        @Rule
     public final TextFromStandardInputStream systemInMock = emptyStandardInputStream();
-    private final String str;
-    private final boolean bool;
-    ValidateEmail ve = ValidateEmail.getInstance();
+        /**
+         * The Str.
+         */
+        private final String str;
+        /**
+         * The Bool.
+         */
+        private final boolean bool;
+        /**
+         * The Ve.
+         */
+        ValidateEmail ve = ValidateEmail.getInstance();
 
-    public TestisValid(String str, Boolean bool) {
+        /**
+         * Instantiates a new Testis valid.
+         *
+         * @param str  the str
+         * @param bool the bool
+         */
+        public TestisValid(String str, Boolean bool) {
       this.str = str;
       this.bool = bool;
     }
 
-    @Parameterized.Parameters
+        /**
+         * Gets param.
+         *
+         * @return the param
+         */
+        @Parameterized.Parameters
     public static Collection<Object[]> getParam() {
 
       return Arrays.asList(new Object[] {"GFHGl.it", false},
@@ -70,15 +114,12 @@ public class TestValidateEmail {
         new Object[] {"sad@4-.00", true});
     }
 
-    @Test
+        /**
+         * Test is valid.
+         */
+        @Test
     public void testIsValid() {
       assertEquals(ve.isValid(str), bool);
-    }
-
-    @Test
-    public void TestRequest() {
-      systemInMock.provideLines(str);
-      assertEquals(bool ? str : null, ve.request());
     }
 
   }

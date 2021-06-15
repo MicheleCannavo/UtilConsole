@@ -1,3 +1,21 @@
+/*------------------------------------------------------------------------------
+ - Copyright (c) 2021 Cannavo' Michele. All right reserved.
+ -
+ -  This file is part of UtilConsole
+ -
+ -     UtilConsole is free software: you can redistribute it and/or modify
+ -     it under the terms of the Lesser GNU General Public License as published by
+ -     the Free Software Foundation, either version 3 of the License, or
+ -     (at your option) any later version.
+ -
+ -     UtilConsole is distributed in the hope that it will be useful,
+ -     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ -     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ -     Lesser GNU General Public License for more details.
+ -
+ -     You should have received a copy of the Lesser GNU General Public License
+ -     along with UtilConsole.  If not, see <http://www.gnu.org/licenses/>.
+ -----------------------------------------------------------------------------*/
 package org.example.util.console;
 
 import java.io.InputStreamReader;
@@ -5,27 +23,33 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * Questa classe gestisce i possibili metodi
- * di input su console e non.
+ * Classe per gestione degli
+ * INPUT per lo SYSTEM_IN
  *
- * @author Michele Cannavo'
- * @version 0.8.0
- * @since 0.8.0
+ * @author    Michele Cannavo'
+ * @copyright © 2021 - Cannavo' Michele
+ * @license   LGPL 3.0
+ * @date      10/06/2021
+ * @since     1.0.0
+ * @version   1.3.0
  */
 public final class Input {
 
   /**
-   * Instantiates a new Input.
+   * Classe statica.
    */
   private Input() { }
 
   /**
-   * Legge un input, da System.in, come stringa.
+   * Previa stampa di un messaggio, preleva dalla console
+   * o dal System.in, se non dovesse esserci una console connessa,
+   * una input come stringa e lo restituisce al chiamante.
    *
-   * @param format the format
-   * @param args   the args
-   * @return the string
-   * @since 0.6.0
+   * @param format Il formato dalla stringa per il messaggio.
+   * @param args   Gli argomenti del messaggio.
+   *
+   * @return  L'input immesso sotto forma di stringa.
+   * @since   1.0.0
    */
   public static String readLine(String format, Object... args) {
     try {
@@ -37,15 +61,23 @@ public final class Input {
   }
 
   /**
-   * Legge da console una password, senza mostrarne i caratteri a video
+   * Previa stampa del messaggio : "password: "
+   * Permette l' immissione da console di una password
+   * come avviene nelle console linux, ovvero senza mostrare i caratteri a video.
+   * Se non dovesse esserci una console connessa,
+   * l' input avviene come per una stringa normale.
    *
-   * @return la password immessa.
+
+   *
+   * @return  L'input immesso sotto forma di stringa.
+   * @since   1.0.0
    */
   public static String readPassword() {
+    var message = "Immetti password: ";
     try {
-      return Arrays.toString(System.console().readPassword("password: "));
+      return Arrays.toString(System.console().readPassword(message));
     } catch(Exception ex) {
-      return readLine("password: ");
+      return readLine(message);
     }
   }
 

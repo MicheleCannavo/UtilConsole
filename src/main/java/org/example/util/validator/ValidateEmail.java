@@ -1,26 +1,17 @@
 package org.example.util.validator;
 
 /**
- * The type Validate email.
- */
-
-/**
  * Demonstration for PlantUML.
- * <p>
- * Example of use:
- * <p>
- * <img src="doc-files/image1.png" alt="">
- */
-/*
- * @startuml doc-files/image1.png
- * Bob -> Alice : hello
- * Alice --> Bob : OK
- * @enduml
  */
 public final class ValidateEmail extends AbstractValidator {
 
     /**
-     * The constant instance.
+     * Costruttore privato per Validate email.
+     * Setta:<br />
+     * @attribute nameValidator: e-mail<br />
+     * @attribute pattern:  ^[a-zA-Z0-9\\.-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-]{2,4}$<br />
+     * @attribute validationRules:   Indirizzo Valido<br><br />
+     *
      */
     private static ValidateEmail instance = null;
 
@@ -28,9 +19,9 @@ public final class ValidateEmail extends AbstractValidator {
      * Instantiates a new Validate email.
      */
     private ValidateEmail() {
-    nameValidator   = "e-mail";
-    pattern         = "^[a-zA-Z0-9\\.-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-]{2,4}$";
-    validationRules = "Indirizzo Valido";
+    setNameValidator("e-mail");
+    setPattern("^[a-zA-Z0-9\\.-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-]{2,4}$");
+    setValidationRules("Indirizzo Valido");
   }
 
     /**

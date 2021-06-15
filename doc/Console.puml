@@ -1,0 +1,6 @@
+@startuml
+class org.example.util.console.Console {
+- <<Create>> Console()
++ {static} void clrscr()
+}
+@enduml

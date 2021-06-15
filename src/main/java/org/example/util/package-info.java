@@ -1,28 +1,34 @@
-/*
- * Copyright (c) 2021 Cannavo' Michele. All rights reserved.
- * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
- *
- * This code is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License version 2 only, as
- * published by the Free Software Foundation.  Oracle designates this
- * particular file as subject to the "Classpath" exception as provided
- * by Oracle in the LICENSE file that accompanied this code.
- *
- * This code is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
- * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
- * version 2 for more details (a copy is included in the LICENSE file that
- * accompanied this code).
- */
+/*------------------------------------------------------------------------------
+ - Copyright (c) 2021 Cannavo' Michele. All right reserved.
+ -
+ -  This file is part of UtilConsole
+ -
+ -     UtilConsole is free software: you can redistribute it and/or modify
+ -     it under the terms of the Lesser GNU General Public License as published by
+ -     the Free Software Foundation, either version 3 of the License, or
+ -     (at your option) any later version.
+ -
+ -     UtilConsole is distributed in the hope that it will be useful,
+ -     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ -     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ -     Lesser GNU General Public License for more details.
+ -
+ -     You should have received a copy of the Lesser GNU General Public License
+ -     along with UtilConsole.  If not, see <http://www.gnu.org/licenses/>.
+ -----------------------------------------------------------------------------*/
 /**
  * Questo package contiene le classi e metodi che implementano
- * la gestione del sistema di validazione degli inut da tastiera.
+ * la gestione del sistema di validazione degli input da tastiera.
  * Tratta ogni input come stringa e lo matcha con una regex
  * appositamente scritta per tipologia di input richiesto.
  *
- * @author  Cannavo' Michele
- * @since   1.0.0
- * @version 1.1.0
- * change  Aggiunta ValidateVersion.
+ * @author      Cannavo' Michele
+ * @copyright   © 2021 - Cannavo' Michele
+ * @license     LGPL 3.0
+ * @date        10/06/2021
+ * @version     1.3.0
+ * @mod         12/06/2021
+ * @mod         Aggiunta ValidateVersion.
+
  */
 package org.example.util;

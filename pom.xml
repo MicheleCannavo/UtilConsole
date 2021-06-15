@@ -8,8 +8,6 @@
   <version>1.2.0</version>
 
   <name>UtilConsole</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
 
 
   <properties>
@@ -148,19 +146,24 @@
         <nohelp>true</nohelp>
         <tags>
           <tag>
-            <name>lic</name>
+            <name>license</name>
             <placement>pt</placement>
             <head>License</head>
           </tag>
           <tag>
             <name>copyright</name>
             <placement>a</placement>
-            <head>Copyright (C)</head>
+            <head>Copyright</head>
           </tag>
           <tag>
             <name>brief</name>
             <placement>a</placement>
             <head>Short description</head>
+          </tag>
+          <tag>
+            <name>attribute</name>
+            <placement>a</placement>
+            <head>Attribute:</head>
           </tag>
 
           <tag>
@@ -169,10 +172,11 @@
             <head>Modified</head>
           </tag>
           <tag>
-            <name>create</name>
+            <name>date</name>
             <placement>a</placement>
             <head>Creato il</head>
           </tag>
+
         </tags>
       </configuration>
     </plugin>

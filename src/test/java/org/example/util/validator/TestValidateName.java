@@ -9,20 +9,30 @@ import org.junit.runners.Parameterized;
 import java.util.Arrays;
 import java.util.Collection;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 import static org.junit.contrib.java.lang.system.TextFromStandardInputStream.emptyStandardInputStream;
 
-
+/**
+ * The type Test validate name.
+ */
 public class TestValidateName  {
 
-  ValidateName vn;
+    /**
+     * The Vn.
+     */
+    ValidateName vn;
 
-  @Before
+    /**
+     * Pre condition.
+     */
+    @Before
   public void preCondition(){
     vn = ValidateName.getInstance();
   }
 
-  @Test
+    /**
+     * Test get descriptor rules validation.
+     */
+    @Test
   public void testGetDescriptorRulesValidation() {
     String desc ="Il nick deve contenere:" + System.lineSeparator() +
       "- l' iniziale MAIUSCOLA" + System.lineSeparator() +
@@ -33,33 +43,65 @@ public class TestValidateName  {
     assertEquals(desc, vn.getRulesOfValidation());
   }
 
-  @Test
+    /**
+     * Gets pattern.
+     */
+    @Test
   public void getPattern() {
     assertEquals("^[A-Z]{1,}[a-z0-9]{3,25}$",
       vn.getPattern());
   }
 
-  @Test
+    /**
+     * Gets validator name.
+     */
+    @Test
   public void getValidatorName() {
     assertEquals("nome utente",
       vn.getValidatorName());
   }
 
-  @RunWith(Parameterized.class)
+    /**
+     * The type Test validate number with input.
+     */
+    @RunWith(Parameterized.class)
   public static class TestValidateNumberWithInput {
 
-    @Rule
+        /**
+         * The System in mock.
+         */
+        @Rule
     public final TextFromStandardInputStream systemInMock = emptyStandardInputStream();
-    private final String str;
-    private final boolean bool;
-    private ValidateName vn;
+        /**
+         * The Str.
+         */
+        private final String str;
+        /**
+         * The Bool.
+         */
+        private final boolean bool;
+        /**
+         * The Vnp.
+         */
+        private ValidateName vnp= ValidateName.getInstance();
 
-    public TestValidateNumberWithInput(String str, boolean bool) {
-      this.str = str;
+        /**
+         * Instantiates a new Test validate number with input.
+         *
+         * @param str  the str
+         * @param bool the bool
+         */
+        public TestValidateNumberWithInput(String str, boolean bool) {
+      this.str  = str;
       this.bool = bool;
     }
 
-    @Parameterized.Parameters
+        /**
+         * Gets param.
+         *
+         * @return the param
+         */
+        @Parameterized.Parameters
     public static Collection<Object[]> getParam() {
       return Arrays.asList(
         new Object[] {"AAA",      false},
@@ -71,18 +113,12 @@ public class TestValidateName  {
         new Object[] {"Asds34fdsfsdfsdfsdfsdfsdfsdfsdsdfsdsdfdsfsdfsdfsdfsdfsdf",  false});
     }
 
-    @Test
+        /**
+         * Testis valid.
+         */
+        @Test
     public void testisValid() {
-      System.out.println(str);
-      assertEquals(vn.isValid(str), bool);
-    }
-
-    @Test
-    public void TestRequest() {
-      systemInMock.provideLines(str);
-      assertEquals(bool ? str : null, vn.request());
+      assertEquals(vnp.isValid(str), bool);
     }
   }
-
-
 }
