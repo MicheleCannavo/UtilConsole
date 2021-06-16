@@ -1,9 +1,0 @@
-digraph "org.example.util.validator.ValidateGeneric"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{org.example.util.validator.\lValidateGeneric\n||+  ValidateGeneric(String\l nameValidator, String\l patternValidator)\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Questa classe permette di validare un oggetto."];
-  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
-  Node2 [label="{org.example.util.validator.\lAbstractValidator\n|- String nameValidator\l- String pattern\l- String validationRules\l|+ String getPattern()\l+ String getRulesOfValidation()\l+ String getValidationRules()\l+ String getValidatorName()\l+ boolean isValid(String\l string)\l+ String request()\l+ void setNameValidator\l(String nameValidator)\l+ void setPattern(String\l pattern)\l+ void setValidationRules\l(String validationRules)\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d6e/a00073.html",tooltip="Questa interfaccia permette la validazione di una Stringa con l' elemento oggetto della classe."];
-}

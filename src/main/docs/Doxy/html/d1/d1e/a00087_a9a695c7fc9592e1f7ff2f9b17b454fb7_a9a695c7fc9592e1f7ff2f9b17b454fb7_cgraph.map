@@ -1,6 +1,0 @@
-<map id="org.example.util.validator.ValidateGeneric.ValidateGeneric" name="org.example.util.validator.ValidateGeneric.ValidateGeneric">
-<area shape="rect" id="node1" title="Costruttore per la validazione di un oggetto generico." alt="" coords="5,71,216,112"/>
-<area shape="rect" id="node2" href="$d1/d51/a00079_a4e5c51528d1ceff3e97a2c833c66bd2e.html#a4e5c51528d1ceff3e97a2c833c66bd2e" title="Sets name validator." alt="" coords="264,5,493,47"/>
-<area shape="rect" id="node3" href="$d1/d51/a00079_ad9a4477ef4cec79579960fb1683ff1a6.html#ad9a4477ef4cec79579960fb1683ff1a6" title="Sets pattern." alt="" coords="285,71,472,112"/>
-<area shape="rect" id="node4" href="$d1/d1e/a00087_a245fb03095b9a67f37794fa5c9da3837.html#a245fb03095b9a67f37794fa5c9da3837" title="Questo metodo permette di descrivere le regole di validazione qualora ci fosse bisogno." alt="" coords="265,136,492,177"/>
-</map>

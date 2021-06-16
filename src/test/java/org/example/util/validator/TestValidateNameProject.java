@@ -114,6 +114,7 @@ public class TestValidateNameProject {
         new Object[] {"\0",       false},
         new Object[] {"0ds",      false},
         new Object[] {"-..s23s",  false},
+        new Object[] {null, false},
         new Object[] {"Asds34f",  true});
     }
 

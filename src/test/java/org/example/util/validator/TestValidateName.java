@@ -109,6 +109,7 @@ public class TestValidateName  {
         new Object[] {"Assd0",    true},
         new Object[] {"\0",       false},
         new Object[] {"A0ds",     true},
+        new Object[] {null,       false},
         new Object[] {"-..s23s",  false},
         new Object[] {"Asds34fdsfsdfsdfsdfsdfsdfsdfsdsdfsdsdfdsfsdfsdfsdfsdfsdf",  false});
     }

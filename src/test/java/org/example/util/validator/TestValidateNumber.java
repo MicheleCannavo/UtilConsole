@@ -107,6 +107,7 @@ public class TestValidateNumber {
         new Object[] {"\0",            false},
         new Object[] {"0",             true},
         new Object[] {"-..s23s",       false},
+          new Object[] {null, false},
         new Object[] {"Asds34fAS3423", false});
     }
 

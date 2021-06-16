@@ -1,6 +1,0 @@
-<map id="org.example.util.console.Output.printnlLine" name="org.example.util.console.Output.printnlLine">
-<area shape="rect" id="node1" title="Stampa una stringa con lineSeparator() finale." alt="" coords="437,71,604,112"/>
-<area shape="rect" id="node2" href="$d9/da5/a00075_ac8e9771ff1494e314bcd6bc6a46f2939.html#ac8e9771ff1494e314bcd6bc6a46f2939" title="Stampa la stringa &quot;item + &quot; è già presente&quot;." alt="" coords="223,5,389,47"/>
-<area shape="rect" id="node3" href="$d9/da5/a00075_aec5dd97874207af8ecf9680b111134e1.html#aec5dd97874207af8ecf9680b111134e1" title="Stampa la stringa &quot;input non valido&quot;." alt="" coords="223,71,389,112"/>
-<area shape="rect" id="node4" href="$d1/d51/a00079_a65bd335250cee3a9dc558f7d5dbca1bc.html#a65bd335250cee3a9dc558f7d5dbca1bc" title="Richiesta tramite input da tastiera." alt="" coords="5,100,175,141"/>
-</map>

@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"org.example"},{"l":"org.example.util.console"},{"l":"org.example.util.validator"}];updateSearchResults();

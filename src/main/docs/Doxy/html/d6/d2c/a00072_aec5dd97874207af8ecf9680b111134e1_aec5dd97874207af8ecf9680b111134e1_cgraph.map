@@ -1,5 +1,0 @@
-<map id="org.example.util.console.Output.printNotValid" name="org.example.util.console.Output.printNotValid">
-<area shape="rect" id="node1" title="Stampa la stringa &quot;input non valido&quot;." alt="" coords="5,5,172,47"/>
-<area shape="rect" id="node2" href="$d6/d2c/a00072_a94c3d547ab0e1b7f8a17b756389aa450.html#a94c3d547ab0e1b7f8a17b756389aa450" title="Stampa una stringa con lineSeparator() finale." alt="" coords="220,5,387,47"/>
-<area shape="rect" id="node3" href="$d6/d2c/a00072_adf62270ce5d7e0dc37915832a4c63300.html#adf62270ce5d7e0dc37915832a4c63300" title="Stampa una stringa senza lineSeparator() finale." alt="" coords="435,5,601,47"/>
-</map>

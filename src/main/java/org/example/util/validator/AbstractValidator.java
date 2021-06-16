@@ -122,8 +122,7 @@ public abstract class AbstractValidator {
      * @return L' input inserito.
      */
     public String request() {
-        String tmpString;
-        tmpString = Input.readLine("Inserire " + getValidatorName() + " ");
+        String tmpString = Input.readLine("Inserire " + getValidatorName() + " ");
 
         while (!isValid(tmpString) || tmpString.isEmpty()) {
             Output.printNotValid();

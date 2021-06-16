@@ -115,7 +115,8 @@ public class TestValidateGeneric {
         new Object[] {"313@5465456", false},
         new Object[] {"49", false},
         new Object[] {"qw ds", false},
-        new Object[] {"10632232032023032032000", true});
+        new Object[] {"10632232032023032032000", true},
+        new Object[] {null, false});
 
     }
 

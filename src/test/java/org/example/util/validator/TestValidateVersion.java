@@ -118,6 +118,7 @@ public class TestValidateVersion {
                 new Object[]{"\0", false},
                 new Object[]{"1.2+builf", false},
                 new Object[]{"-build+release", false},
+                new Object[] {null, false},
                 new Object[]{"Asds34fdsfsdf", false});
         }
 

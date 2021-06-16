@@ -120,6 +120,7 @@ public class TestValidatePassword {
         new Object[] {"SdfsdSDFSD",    false},
         new Object[] {"0DSFSDSD00",    false},
         new Object[] {"A m8",          false},
+          new Object[] {null, false},
         new Object[] {"4assas854",     false});
     }
 

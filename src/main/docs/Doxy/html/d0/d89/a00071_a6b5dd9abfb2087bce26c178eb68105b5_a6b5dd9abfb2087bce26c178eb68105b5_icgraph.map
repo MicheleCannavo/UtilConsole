@@ -1,5 +1,0 @@
-<map id="org.example.util.console.Input.readLine" name="org.example.util.console.Input.readLine">
-<area shape="rect" id="node1" title="Legge un input, da System.in, come stringa." alt="" coords="223,39,389,80"/>
-<area shape="rect" id="node2" href="$d0/d89/a00071_a611c4b2c9a5764ce2be5eb120a73f6a8.html#a611c4b2c9a5764ce2be5eb120a73f6a8" title="Legge da console una password, senza mostrarne i caratteri a video." alt="" coords="7,5,173,47"/>
-<area shape="rect" id="node3" href="$d1/d51/a00079_a65bd335250cee3a9dc558f7d5dbca1bc.html#a65bd335250cee3a9dc558f7d5dbca1bc" title="Richiesta tramite input da tastiera." alt="" coords="5,71,175,112"/>
-</map>
