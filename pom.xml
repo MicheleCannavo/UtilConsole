@@ -42,14 +42,14 @@
     <dependency>
       <groupId>org.jetbrains</groupId>
       <artifactId>annotations</artifactId>
-      <version>RELEASE</version>
+      <version>21.0.1</version>
       <scope>compile</scope>
     </dependency>
  <!-- https://mvnrepository.com/artifact/nl.talsmasoftware/umldoclet -->
 
 
-
   </dependencies>
+
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
@@ -207,10 +207,4 @@
     </plugins>
   </build>
 
-  <reporting>
-    <plugins>
-
-    </plugins>
-  </reporting>
-
-</project>
+ </project>

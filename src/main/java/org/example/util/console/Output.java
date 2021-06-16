@@ -76,7 +76,7 @@ public final class Output {
    * @since 1.1.0
    */
   public static void printNotValid() {
-    String notValid = "input non valido";
+    var notValid = "input non valido";
     printnlLine(notValid);
   }
 

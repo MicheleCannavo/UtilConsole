@@ -10,10 +10,7 @@ Contiene due package
 
 ## Console
 
-[Report SonarQube](./SonarQube.md)
+[Report Coverage](../../../../Report/L.md)
 
-[Report Statistic](./Q.md)
+[Report Statistic](../../../../Report/T.html)
 
-[Report Coverange](./Q.md)
-
-[Report Metric](./Q.md)

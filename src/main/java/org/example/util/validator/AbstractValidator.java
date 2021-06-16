@@ -113,13 +113,19 @@ public abstract class AbstractValidator {
     /**
      * Richiesta tramite input da tastiera.
      *
+     * Se l'input non matcha con la regex del validatore,
+     * verrà chiesto di reinserire nuovamente la stringa.
+     * Se immessa una stringa vuota (INVIO), si uscirà
+     * comunque dalla richiesta.
+     *
+     *
      * @return L' input inserito.
      */
     public String request() {
         String tmpString;
         tmpString = Input.readLine("Inserire " + getValidatorName() + " ");
 
-        while (!isValid(tmpString)) {
+        while (!isValid(tmpString) || tmpString.isEmpty()) {
             Output.printNotValid();
             Output.printnlLine(getRulesOfValidation());
             tmpString = Input.readLine("RE-Inserire " + getValidatorName() + " ");
