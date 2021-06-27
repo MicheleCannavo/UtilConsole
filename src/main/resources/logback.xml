@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration >
+    <property resource="application.yml" />
+    <timestamp key="bySecond" datePattern="yyyyMMdd'-T'HHmmss"/>
+
+    <appender name="FILEHTML" class="ch.qos.logback.core.FileAppender">
+        <file>${logging.path}/mylog-${bySecond}.html</file>
+        <append>true</append>
+        <prudent>true</prudent>
+        <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+            <layout class="ch.qos.logback.classic.html.HTMLLayout">
+                <pattern>%date%thread%mdc%level%C{0}%M%L%msg</pattern>
+            </layout>
+        </encoder>
+    </appender>
+
+    <root level="debug" additivity="true">
+        <appender-ref ref="FILEHTML" />
+    </root>
+
+</configuration>

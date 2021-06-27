@@ -4,7 +4,6 @@
 
 Nelle implementazioni di
 
-- _AbstractValidate_
-  - ValidateName
-  - ValidateEmail
-  - ValidateNumber
+- ValidateName
+- ValidateEmail
+- ValidateNumber
