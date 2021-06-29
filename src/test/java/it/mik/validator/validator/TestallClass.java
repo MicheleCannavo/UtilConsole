@@ -1,4 +1,3 @@
-
 /*------------------------------------------------------------------------------
  - Copyright (c) 2021 Cannavo' Michele. All right reserved.
  -
@@ -17,38 +16,24 @@
  -     You should have received a copy of the Lesser GNU General Public License
  -     along with UtilConsole.  If not, see <http://www.gnu.org/licenses/>.
  -----------------------------------------------------------------------------*/
-
 package it.mik.validator.validator;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
+import org.junit.Test;
+import java.util.regex.PatternSyntaxException;
+
 
 /**
- * This class allows you to validate a generic object
+ * The type Test validate email.
  */
-public class ValidateGeneric extends AbstractValidator {
+public class TestallClass {
 
-    private static final Logger LOGGER =
-      LoggerFactory.getLogger(ValidateGeneric.class);
 
-    /**
-     * Constructor for validating a generic object.
-     * It expects two parameters corresponding
-     * to the name of the validator which should coincide
-     * with the type of the object to be validated,
-     * And with the validation regex rules.
-     *
-     * @param nameValidator    Name of the validator.
-     * @param patternValidator Validation pattern.
-     */
-    public ValidateGeneric(String nameValidator, String patternValidator) {
-
-        setNameValidator(nameValidator);
-        setPattern(patternValidator);
-        setValidationRules("");
-
-        LOGGER.debug("Create instance with \nName:{} - Pattern:{}",
-           getValidatorName(), getPattern());
-    }
-
+  /**
+   * Test is valid.
+   */
+  @Test(expected = PatternSyntaxException.class)
+  public void testPatternSyntaxExceptionInIsValid() {
+    new ValidateGeneric("generic", null);
+  }
 }

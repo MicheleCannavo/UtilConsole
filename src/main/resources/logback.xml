@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<configuration >
+<configuration debug="true">
     <property resource="application.yml" />
     <timestamp key="bySecond" datePattern="yyyyMMdd'-T'HHmmss"/>
 

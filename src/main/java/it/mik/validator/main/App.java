@@ -17,7 +17,7 @@
  -     along with UtilConsole.  If not, see <http://www.gnu.org/licenses/>.
  -----------------------------------------------------------------------------*/
 
-import it.mik.validator.validator.AbstractValidator;
+package it.mik.validator.main;import it.mik.validator.validator.AbstractValidator;
 import it.mik.validator.validator.ValidateGeneric;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -40,9 +40,10 @@ public class App {
    */
   public static void main(String[] args) {
 
-    AbstractValidator vb = new ValidateGeneric("r", "[0-9]");
+    AbstractValidator vb = new ValidateGeneric(null, "[0-9]");
     Output.printnlLine(vb.getPattern());
-    vb.isValid(null);
-    vb.isValid("2");
+    vb.isValid(" ");
+    vb.request();
+    vb.request();
   }
 }

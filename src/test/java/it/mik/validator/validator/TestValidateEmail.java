@@ -29,8 +29,7 @@ import org.junit.runners.Parameterized;
 import java.util.Arrays;
 import java.util.Collection;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertSame;
+import static org.junit.Assert.*;
 import static org.junit.contrib.java.lang.system.TextFromStandardInputStream.emptyStandardInputStream;
 
 /**
@@ -150,6 +149,6 @@ public class TestValidateEmail {
         public void testIsValid() {
             assertEquals(ve.isValid(str), bool);
         }
-
     }
+
 }

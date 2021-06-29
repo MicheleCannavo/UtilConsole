@@ -5,7 +5,7 @@
 
   <groupId>org.example</groupId>
   <artifactId>UtilConsole</artifactId>
-  <version>1.3.0</version>
+  <version>1.2.0</version>
   <name>UtilConsole</name>
 
   <properties>
@@ -182,7 +182,7 @@
           <tag>
             <name>date</name>
             <placement>a</placement>
-            <head>Create on</head>
+            <head>Creato il</head>
           </tag>
         </tags>
       </configuration>
@@ -192,8 +192,8 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>16</source>
-          <target>16</target>
+          <source>10</source>
+          <target>10</target>
         </configuration>
       </plugin>
 

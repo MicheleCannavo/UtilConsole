@@ -1,0 +1,11 @@
+@startuml
+class it.mik.validator.validator.ValidateEmail {
+- {static} Logger LOGGER
+- {static} ValidateEmail instance
+- <<Create>> ValidateEmail()
++ {static} ValidateEmail getInstance()
+}
+
+
+it.mik.validator.validator.AbstractValidator <|-- it.mik.validator.validator.ValidateEmail
+@enduml

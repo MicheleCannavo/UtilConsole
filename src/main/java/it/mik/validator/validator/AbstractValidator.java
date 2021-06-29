@@ -19,6 +19,7 @@
 
 package it.mik.validator.validator;
 
+import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import util.console.Input;
@@ -28,17 +29,25 @@ import java.util.regex.PatternSyntaxException;
 
 public abstract class AbstractValidator {
 
-  /** Logger */
+  /**
+   * Logger
+   */
   private static final Logger LOGGER =
     LoggerFactory.getLogger(AbstractValidator.class);
 
-  /** The Pattern. */
+  /**
+   * The Pattern.
+   */
   private String pattern = "";
 
-  /** The Name validator. */
+  /**
+   * The Name validator.
+   */
   private String nameValidator = "";
 
-  /** The Validation rules.  */
+  /**
+   * The Validation rules.
+   */
   private String validationRules = "";
 
   /**
@@ -47,7 +56,7 @@ public abstract class AbstractValidator {
    * @param nameValidator the name validator
    */
   public void setNameValidator(String nameValidator) {
-    this.nameValidator = (nameValidator == null) ? "" : nameValidator;
+    this.nameValidator = (nameValidator == null) ? "anonymous" : nameValidator;
   }
 
   /**
@@ -83,15 +92,18 @@ public abstract class AbstractValidator {
    * @param pattern the pattern
    */
   public void setPattern(String pattern) {
-    this.pattern = (pattern == null) ? "" : pattern;
+    if (null == pattern) {
+      LOGGER.error("Regex is null");
+      throw new PatternSyntaxException("Regex is null", null, -1);
+    }
+    this.pattern = pattern;
   }
 
   /**
    * Returns a string with the validation element of the class.
    *
-   * @return  Name object to validate.
-   *
-   * @since   0.6.0
+   * @return Name object to validate.
+   * @since 0.6.0
    */
   public String getValidatorName() {
     return this.nameValidator;
@@ -109,22 +121,16 @@ public abstract class AbstractValidator {
   /**
    * Input a string and check if matches of regex validation.
    *
-   * @param   string Regex
-   * @return  true if so, no if not.
+   * @param string Regex
+   * @return true if so, no if not.
    */
-  public boolean isValid(String string) {
-    LOGGER.debug("Validation:\nparameter:{}\nwith:{}", string, getPattern());
+  public boolean isValid(@NotNull String string) {
+    LOGGER.debug("Validation {{}} with:{}", string, getPattern());
     boolean result;
-    try {
-      result = Pattern.matches(getPattern(), string);
-      LOGGER.debug("The result of the validation is: {}", result);
-      return result;
-    } catch (NullPointerException | PatternSyntaxException S) {
-      LOGGER.warn("Validation error.{}Parameter \"{}\" not valid",
-        System.lineSeparator(), string);
+    result = Pattern.matches(getPattern(), string);
+    LOGGER.debug("The result of the validation is: {}", result);
+    return result;
 
-      return false;
-    }
   }
 
 
@@ -146,8 +152,7 @@ public abstract class AbstractValidator {
       Output.printNotValid();
       Output.printnlLine(getRulesOfValidation());
       tmpString = Input.readLine("Re-insert " + getValidatorName() + " ");
-
-      LOGGER.debug("Value entered: {}", tmpString);
+      LOGGER.debug("Value entered: {}\\\\", tmpString);
     }
     return tmpString;
   }

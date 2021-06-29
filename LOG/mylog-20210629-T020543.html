@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Tue Jun 29 02:05:43 CEST 2021</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="MDC">MDC</td>
+<td class="Level">Level</td>
+<td class="ClassOfCaller">ClassOfCaller</td>
+<td class="MethodOfCaller">MethodOfCaller</td>
+<td class="LineOfCaller">LineOfCaller</td>
+<td class="Message">Message</td>
+</tr>
+
+
+<tr class="debug even">
+<td class="Date">2021-06-29 02:05:44,088</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">ValidateGeneric</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="LineOfCaller">50</td>
+<td class="Message">Create instance with 
+Name:anonymous - Pattern:[0-9]</td>
+</tr>
+
+<tr class="warn odd">
+<td class="Date">2021-06-29 02:05:44,119</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">WARN</td>
+<td class="ClassOfCaller">Output</td>
+<td class="MethodOfCaller">printLine</td>
+<td class="LineOfCaller">64</td>
+<td class="Message">Console not found</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">2021-06-29 02:05:44,135</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">Output</td>
+<td class="MethodOfCaller">printLine</td>
+<td class="LineOfCaller">67</td>
+<td class="Message">[0-9]
+</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">2021-06-29 02:05:44,135</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">AbstractValidator</td>
+<td class="MethodOfCaller">isValid</td>
+<td class="LineOfCaller">128</td>
+<td class="Message">Validation { } with:[0-9]</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">2021-06-29 02:05:44,135</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">AbstractValidator</td>
+<td class="MethodOfCaller">isValid</td>
+<td class="LineOfCaller">131</td>
+<td class="Message">The result of the validation is: false</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">2021-06-29 02:05:53,539</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">AbstractValidator</td>
+<td class="MethodOfCaller">request</td>
+<td class="LineOfCaller">149</td>
+<td class="Message">Value entered: wer</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">2021-06-29 02:05:53,539</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">AbstractValidator</td>
+<td class="MethodOfCaller">isValid</td>
+<td class="LineOfCaller">128</td>
+<td class="Message">Validation {wer} with:[0-9]</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">2021-06-29 02:05:53,555</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">AbstractValidator</td>
+<td class="MethodOfCaller">isValid</td>
+<td class="LineOfCaller">131</td>
+<td class="Message">The result of the validation is: false</td>
+</tr>
+
+<tr class="warn even">
+<td class="Date">2021-06-29 02:05:53,555</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">WARN</td>
+<td class="ClassOfCaller">AbstractValidator</td>
+<td class="MethodOfCaller">request</td>
+<td class="LineOfCaller">151</td>
+<td class="Message">Entry error</td>
+</tr>
+
+<tr class="warn odd">
+<td class="Date">2021-06-29 02:05:53,555</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">WARN</td>
+<td class="ClassOfCaller">Output</td>
+<td class="MethodOfCaller">printLine</td>
+<td class="LineOfCaller">64</td>
+<td class="Message">Console not found</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">2021-06-29 02:05:53,555</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">Output</td>
+<td class="MethodOfCaller">printLine</td>
+<td class="LineOfCaller">67</td>
+<td class="Message">input non valido
+</td>
+</tr>
+
+<tr class="warn odd">
+<td class="Date">2021-06-29 02:05:53,555</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">WARN</td>
+<td class="ClassOfCaller">Output</td>
+<td class="MethodOfCaller">printLine</td>
+<td class="LineOfCaller">64</td>
+<td class="Message">Console not found</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">2021-06-29 02:05:53,555</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">Output</td>
+<td class="MethodOfCaller">printLine</td>
+<td class="LineOfCaller">67</td>
+<td class="Message">
+</td>
+</tr>

@@ -78,6 +78,15 @@ public class TestValidateGeneric {
   }
 
   /**
+   * Gets validator name.
+   */
+  @Test
+  public void getValidatorNameIfNull() {
+    var vg= new ValidateGeneric(null,"");
+    assertEquals("anonimous", vg.getValidatorName());
+  }
+
+  /**
    * The type Testis valid.
    */
   @RunWith(Parameterized.class)

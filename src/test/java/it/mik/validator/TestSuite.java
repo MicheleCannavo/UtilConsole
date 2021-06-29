@@ -27,7 +27,7 @@ import org.junit.runners.Suite;
   TestValidateName.class,     TestValidateNameProject.class,
   TestValidateGeneric.class,  TestValidateEmail.class,
   TestValidatePassword.class, TestValidateNumber.class,
-  TestValidateVersion.class,
+  TestValidateVersion.class,  TestallClass.class
 
 })
 class JunitTestSuite {
