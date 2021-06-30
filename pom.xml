@@ -100,7 +100,7 @@
     <dependency>
     <groupId>it.mik</groupId>
     <artifactId>MyIOConsole</artifactId>
-    <version>1.5.0</version>
+    <version>1.4.4</version>
   </dependency>
     <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-core -->
 
