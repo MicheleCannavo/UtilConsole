@@ -100,7 +100,8 @@
     <dependency>
     <groupId>it.mik</groupId>
     <artifactId>MyIOConsole</artifactId>
-    <version>1.5.0</version>
+    <version>1.4.4</version>
+      <type>ep-eventflow-fragment</type>
   </dependency>
     <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-core -->
 
@@ -114,9 +115,14 @@
       <artifactId>logback-core</artifactId>
       <version>1.3.0-alpha5</version>
     </dependency>
+    <dependency>
+      <groupId>it.mik</groupId>
+      <artifactId>MyIOConsole</artifactId>
+      <version>1.5.1</version>
+    </dependency>
 
 
- <!-- https://mvnrepository.com/artifact/nl.talsmasoftware/umldoclet -->
+    <!-- https://mvnrepository.com/artifact/nl.talsmasoftware/umldoclet -->
 
 
 
