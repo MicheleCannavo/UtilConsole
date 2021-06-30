@@ -101,6 +101,7 @@
     <groupId>it.mik</groupId>
     <artifactId>MyIOConsole</artifactId>
     <version>1.5.0</version>
+      <type>ep-eventflow-fragment</type>
   </dependency>
     <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-core -->
 
