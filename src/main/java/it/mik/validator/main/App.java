@@ -16,19 +16,17 @@
  -     You should have received a copy of the Lesser GNU General Public License
  -     along with UtilConsole.  If not, see <http://www.gnu.org/licenses/>.
  -----------------------------------------------------------------------------*/
+package it.mik.validator.main;
 
-package it.mik.validator.main;import it.mik.validator.validator.AbstractValidator;
+import it.mik.validator.validator.AbstractValidator;
 import it.mik.validator.validator.ValidateGeneric;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import util.console.Output;
 
 /**
  * Hello world!
  */
 public class App {
-  private static final Logger LOGGER  =
-    LoggerFactory.getLogger(App.class);
+
   /**
    *
    */
@@ -42,8 +40,7 @@ public class App {
 
     AbstractValidator vb = new ValidateGeneric(null, "[0-9]");
     Output.printnlLine(vb.getPattern());
-    vb.isValid(" ");
-    vb.request();
+    Output.printnlLine(" is: ".concat(String.valueOf(vb.isValid(" "))));
     vb.request();
   }
 }

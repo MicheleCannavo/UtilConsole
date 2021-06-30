@@ -36,7 +36,7 @@ public final class ValidateNameProject extends AbstractValidator {
   /**
    * The constant instance.
    */
-  private static ValidateNameProject instance = null;
+  private static ValidateNameProject instance ;
 
   /**
    * Instantiates a new Validate name project.
@@ -62,7 +62,7 @@ public final class ValidateNameProject extends AbstractValidator {
    *
    * @return the instance
    */
-  public static ValidateNameProject getInstance() {
+  public static synchronized ValidateNameProject getInstance() {
 
     if (null == instance) {
       instance = new ValidateNameProject();

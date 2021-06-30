@@ -32,7 +32,7 @@ public final class ValidatePassword extends AbstractValidator {
   /**
    * The constant instance.
    */
-  private static ValidatePassword instance = null;
+  private static ValidatePassword instance ;
 
   /**
    * Class with static methods only
@@ -55,7 +55,7 @@ public final class ValidatePassword extends AbstractValidator {
    *
    * @return the validate password
    */
-  public static ValidatePassword getInstance(){
+  public static synchronized ValidatePassword getInstance(){
     if(null == instance){
       instance = new ValidatePassword();
     }

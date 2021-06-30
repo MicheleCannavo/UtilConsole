@@ -36,7 +36,7 @@ public final class ValidateNumber extends AbstractValidator {
   /**
    * The constant instance.
    */
-  private static ValidateNumber instance = null;
+  private static ValidateNumber instance ;
 
   /**
    *
@@ -55,7 +55,7 @@ public final class ValidateNumber extends AbstractValidator {
    *
    * @return the validate number
    */
-  public static ValidateNumber getInstance(){
+  public static synchronized ValidateNumber getInstance(){
 
     if(null == instance){
       instance = new ValidateNumber();

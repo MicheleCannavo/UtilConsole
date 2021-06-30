@@ -38,7 +38,7 @@ public final class ValidateEmail extends AbstractValidator {
      * @attribute pattern:  ^[a-zA-Z0-9\\.-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-]{2,4}$<br />
      * @attribute validationRules:   Valid address<br><br />
      */
-    private static ValidateEmail instance = null;
+    private static ValidateEmail instance ;
 
     /**
      * Instantiates a new Validate email.
@@ -49,7 +49,7 @@ public final class ValidateEmail extends AbstractValidator {
         setValidationRules("Valid address");
         LOGGER.debug("Create instance with \nName:{} - Pattern:{} - Rules:{}",
           getValidatorName(), getPattern(), getRulesOfValidation());
-    }/**/
+     }/**/
 
 
     /**
@@ -57,7 +57,7 @@ public final class ValidateEmail extends AbstractValidator {
      *
      * @return The only instance of the class.
      */
-    public static ValidateEmail getInstance() {
+    public static synchronized ValidateEmail getInstance() {
 
         if (null == instance) {
             instance = new ValidateEmail();

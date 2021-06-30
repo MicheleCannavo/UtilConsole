@@ -53,8 +53,6 @@ public class TestValidateEmail {
     public void isSingleton(){
         ValidateEmail val = ValidateEmail.getInstance();
         assertSame(ve, val);
-
-
     }
 
     /**

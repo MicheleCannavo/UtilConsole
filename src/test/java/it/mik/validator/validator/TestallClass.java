@@ -18,7 +18,6 @@
  -----------------------------------------------------------------------------*/
 package it.mik.validator.validator;
 
-
 import org.junit.Test;
 import java.util.regex.PatternSyntaxException;
 
@@ -28,7 +27,6 @@ import java.util.regex.PatternSyntaxException;
  */
 public class TestallClass {
 
-
   /**
    * Test is valid.
    */
@@ -36,4 +34,6 @@ public class TestallClass {
   public void testPatternSyntaxExceptionInIsValid() {
     new ValidateGeneric("generic", null);
   }
+
+
 }

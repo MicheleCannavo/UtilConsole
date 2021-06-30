@@ -34,7 +34,7 @@ public final class ValidateName extends AbstractValidator {
     /**
      * The constant instance.
      */
-    private static ValidateName instance = null;
+    private static ValidateName instance ;
 
     /**
      * Costruttore privato per Validate name.
@@ -64,9 +64,9 @@ public final class ValidateName extends AbstractValidator {
      *
      * @return the only possible instance.
      */
-    public static ValidateName getInstance() {
+    public static synchronized ValidateName getInstance() {
 
-        if(null == instance) {
+        if (null == instance) {
             instance = new ValidateName();
         }
         return instance;

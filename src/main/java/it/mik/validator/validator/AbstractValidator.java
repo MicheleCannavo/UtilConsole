@@ -19,14 +19,18 @@
 
 package it.mik.validator.validator;
 
+import java.util.regex.Pattern;
+import java.util.regex.PatternSyntaxException;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import util.console.Input;
 import util.console.Output;
-import java.util.regex.Pattern;
-import java.util.regex.PatternSyntaxException;
 
+
+/**
+ *
+ */
 public abstract class AbstractValidator {
 
   /**
@@ -53,10 +57,10 @@ public abstract class AbstractValidator {
   /**
    * Sets name validator.
    *
-   * @param nameValidator the name validator
+   * @param name the name validator
    */
-  public void setNameValidator(String nameValidator) {
-    this.nameValidator = (nameValidator == null) ? "anonymous" : nameValidator;
+  public void setNameValidator(final String name) {
+    this.nameValidator = (name == null) ? "anonymous" : name;
   }
 
   /**
@@ -73,7 +77,7 @@ public abstract class AbstractValidator {
    *
    * @param validationRules the validation rules
    */
-  public void setValidationRules(String validationRules) {
+  public void setValidationRules(final String validationRules) {
     this.validationRules = (validationRules == null) ? "" : validationRules;
   }
 
@@ -91,7 +95,7 @@ public abstract class AbstractValidator {
    *
    * @param pattern the pattern
    */
-  public void setPattern(String pattern) {
+  public void setPattern(final String pattern) {
     if (null == pattern) {
       LOGGER.error("Regex is null");
       throw new PatternSyntaxException("Regex is null", null, -1);
@@ -124,9 +128,9 @@ public abstract class AbstractValidator {
    * @param string Regex
    * @return true if so, no if not.
    */
-  public boolean isValid(@NotNull String string) {
+  public boolean isValid(@NotNull final String string) {
     LOGGER.debug("Validation {{}} with:{}", string, getPattern());
-    boolean result;
+    final boolean result;
     result = Pattern.matches(getPattern(), string);
     LOGGER.debug("The result of the validation is: {}", result);
     return result;
@@ -147,12 +151,12 @@ public abstract class AbstractValidator {
   public String request() {
     var tmpString = Input.readLine("Inserire " + getValidatorName() + " ");
     LOGGER.debug("Value entered: {}", tmpString);
-    while (!isValid(tmpString) || tmpString.isEmpty()) {
+    while (!isValid(tmpString) ) {
       LOGGER.warn("Entry error");
       Output.printNotValid();
       Output.printnlLine(getRulesOfValidation());
       tmpString = Input.readLine("Re-insert " + getValidatorName() + " ");
-      LOGGER.debug("Value entered: {}\\\\", tmpString);
+      LOGGER.debug("Value entered: {}", tmpString);
     }
     return tmpString;
   }

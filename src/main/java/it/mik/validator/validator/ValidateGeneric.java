@@ -41,7 +41,7 @@ public class ValidateGeneric extends AbstractValidator {
      * @param nameValidator    Name of the validator.
      * @param patternValidator Validation pattern.
      */
-    public ValidateGeneric(String nameValidator, String patternValidator) {
+    public ValidateGeneric(final String nameValidator, final String patternValidator) {
 
         setNameValidator(nameValidator);
         setPattern(patternValidator);

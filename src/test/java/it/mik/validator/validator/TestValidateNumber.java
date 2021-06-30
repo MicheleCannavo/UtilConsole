@@ -151,9 +151,8 @@ public class TestValidateNumber {
 
   @Test
   public void testRequest(){
-    systemInMock.provideLines("sdssds","5");
+    systemInMock.provideLines("sdsds","5","wq");
     assertEquals("5", vn.request());
-
   }
 
 }

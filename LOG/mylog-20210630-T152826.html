@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Wed Jun 30 15:28:26 CEST 2021</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="MDC">MDC</td>
+<td class="Level">Level</td>
+<td class="ClassOfCaller">ClassOfCaller</td>
+<td class="MethodOfCaller">MethodOfCaller</td>
+<td class="LineOfCaller">LineOfCaller</td>
+<td class="Message">Message</td>
+</tr>
+
+
+<tr class="error even">
+<td class="Date">2021-06-30 15:28:26,833</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">ERROR</td>
+<td class="ClassOfCaller">AbstractValidator</td>
+<td class="MethodOfCaller">setPattern</td>
+<td class="LineOfCaller">96</td>
+<td class="Message">Regex is null</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">2021-06-30 15:28:26,883</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">ValidateEmail</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="LineOfCaller">50</td>
+<td class="Message">Create instance with 
+Name:e-mail - Pattern:^[a-zA-Z0-9\.-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]{2,4}$ - Rules:Valid address</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">2021-06-30 15:28:26,923</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">ValidateGeneric</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="LineOfCaller">50</td>
+<td class="Message">Create instance with 
+Name:generic - Pattern:^[0-6]{1,}$</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">2021-06-30 15:28:26,933</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">ValidateGeneric</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="LineOfCaller">50</td>
+<td class="Message">Create instance with 
+Name:generic - Pattern:^[0-6]{1,}$</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">2021-06-30 15:28:26,933</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">ValidateGeneric</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="LineOfCaller">50</td>
+<td class="Message">Create instance with 
+Name:generic - Pattern:^[0-6]{1,}$</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">2021-06-30 15:28:26,933</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">ValidateGeneric</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="LineOfCaller">50</td>
+<td class="Message">Create instance with 
+Name:anonymous - Pattern:</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">2021-06-30 15:28:26,943</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">ValidateGeneric</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="LineOfCaller">50</td>
+<td class="Message">Create instance with 
+Name:generic - Pattern:^[0-6]{1,}$</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">2021-06-30 15:28:26,943</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">ValidateGeneric</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="LineOfCaller">50</td>
+<td class="Message">Create instance with 
+Name:generic - Pattern:^[0-6]{1,}$</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">2021-06-30 15:28:26,943</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">ValidateGeneric</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="LineOfCaller">50</td>
+<td class="Message">Create instance with 
+Name:generic - Pattern:^[0-6]{1,}$</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">2021-06-30 15:28:26,963</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">ValidateName</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="LineOfCaller">58</td>
+<td class="Message">Create instance with 
+Name:Username - Pattern:^[A-Z]{1,}[a-z0-9]{3,25}$ - Rules:The nick must contain:
+- the initial CAPITAL
+- lowercase letters and numbers
+- min 3 characters
+- max 25 characters
+</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">2021-06-30 15:28:26,993</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">ValidateNameProject</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="LineOfCaller">56</td>
+<td class="Message">Create instance with 
+Name:ProjectName - Pattern:^[A-Z]{1,}[a-zA-Z0-9]{2,24}$ - Rules:The project name must contain:
+- Begin with a CAPITAL letter 
+- At least one lowercase letter
+- At least one number
+- Min 3 characters
+- Max 25 characters
+</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">2021-06-30 15:28:27,013</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">ValidateNumber</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="LineOfCaller">49</td>
+<td class="Message">Create instance with 
+Name:number - Pattern:^[0-9]+$ - Rules:</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">2021-06-30 15:28:27,033</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">AbstractValidator</td>
+<td class="MethodOfCaller">request</td>
+<td class="LineOfCaller">149</td>
+<td class="Message">Value entered: sd::ssds</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">2021-06-30 15:28:27,033</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">AbstractValidator</td>
+<td class="MethodOfCaller">isValid</td>
+<td class="LineOfCaller">128</td>
+<td class="Message">Validation {sd::ssds} with:^[0-9]+$</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">2021-06-30 15:28:27,033</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">AbstractValidator</td>
+<td class="MethodOfCaller">isValid</td>
+<td class="LineOfCaller">131</td>
+<td class="Message">The result of the validation is: false</td>
+</tr>
+
+<tr class="warn odd">
+<td class="Date">2021-06-30 15:28:27,033</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">WARN</td>
+<td class="ClassOfCaller">AbstractValidator</td>
+<td class="MethodOfCaller">request</td>
+<td class="LineOfCaller">151</td>
+<td class="Message">Entry error</td>
+</tr>
+
+<tr class="warn even">
+<td class="Date">2021-06-30 15:28:27,033</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">WARN</td>
+<td class="ClassOfCaller">Output</td>
+<td class="MethodOfCaller">printLine</td>
+<td class="LineOfCaller">63</td>
+<td class="Message">Console not found</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">2021-06-30 15:28:27,043</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">Output</td>
+<td class="MethodOfCaller">printLine</td>
+<td class="LineOfCaller">66</td>
+<td class="Message">invalid input
+</td>
+</tr>
+
+<tr class="warn even">
+<td class="Date">2021-06-30 15:28:27,043</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">WARN</td>
+<td class="ClassOfCaller">Output</td>
+<td class="MethodOfCaller">printLine</td>
+<td class="LineOfCaller">63</td>
+<td class="Message">Console not found</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">2021-06-30 15:28:27,043</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">Output</td>
+<td class="MethodOfCaller">printLine</td>
+<td class="LineOfCaller">66</td>
+<td class="Message">
+</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">2021-06-30 15:28:27,043</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">AbstractValidator</td>
+<td class="MethodOfCaller">request</td>
+<td class="LineOfCaller">155</td>
+<td class="Message">Value entered: 5</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">2021-06-30 15:28:27,043</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">AbstractValidator</td>
+<td class="MethodOfCaller">isValid</td>
+<td class="LineOfCaller">128</td>
+<td class="Message">Validation {5} with:^[0-9]+$</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">2021-06-30 15:28:27,043</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">AbstractValidator</td>
+<td class="MethodOfCaller">isValid</td>
+<td class="LineOfCaller">131</td>
+<td class="Message">The result of the validation is: true</td>
+</tr>
+
+<tr class="debug odd">
+<td class="Date">2021-06-30 15:28:27,053</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">ValidatePassword</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="LineOfCaller">49</td>
+<td class="Message">Create instance with 
+Name:password - Pattern:^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{4,8}$ - Rules:Password must contain:
+- A capital letter
+- A lowercase letter
+- A number
+- min 4 characters
+- max 8 characters
+</td>
+</tr>
+
+<tr class="debug even">
+<td class="Date">2021-06-30 15:28:27,073</td>
+<td class="Thread">main</td>
+<td class="MDC"></td>
+<td class="Level">DEBUG</td>
+<td class="ClassOfCaller">ValidateVersion</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="LineOfCaller">53</td>
+<td class="Message">Create instance with 
+Name:version number - Pattern:^([0-9]+)\.([0-9]+)\.([0-9]+)(?:-([0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*))?(?:\+[0-9A-Za-z-]+)?$ - Rules:The format must be X.Y.Z[[-pre_release][+build]] :- X -&gt; MAJOR version
+- Y -&gt; MINOR version
+- Z -&gt; PATCH version
+- - pre-release 
+- + build metadata
+</td>
+</tr>

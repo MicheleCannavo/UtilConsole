@@ -83,7 +83,7 @@ public class TestValidateGeneric {
   @Test
   public void getValidatorNameIfNull() {
     var vg= new ValidateGeneric(null,"");
-    assertEquals("anonimous", vg.getValidatorName());
+    assertEquals("anonymous", vg.getValidatorName());
   }
 
   /**

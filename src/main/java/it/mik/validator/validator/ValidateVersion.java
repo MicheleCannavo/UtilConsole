@@ -37,7 +37,7 @@ public final class ValidateVersion extends AbstractValidator {
     /**
      * The constant instance.
      */
-    private static ValidateVersion instance = null;
+    private static ValidateVersion instance ;
 
     /**
      * Instantiates a new Validate version.
@@ -59,7 +59,7 @@ public final class ValidateVersion extends AbstractValidator {
      *
      * @return the validate version
      */
-    public static ValidateVersion getInstance(){
+    public static synchronized ValidateVersion getInstance(){
 
         if(null == instance){
             instance = new ValidateVersion();
